@@ -9,7 +9,7 @@ export default function Footer() {
           <div className="space-y-4">
             <div>
               <p className="text-gray-400 text-sm">
-                Copyright © 2025 Название компании.
+                Copyright © 2025 FinFlexity. All rights reserved.
               </p>
               <p className="text-gray-400 text-xs mt-2">
                 Создаем цифровые решения для вашего бизнеса

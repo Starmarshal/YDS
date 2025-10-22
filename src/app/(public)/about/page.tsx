@@ -134,7 +134,7 @@ export default function About() {
           <h2 className="text-2xl font-bold mb-6">Личные интересы</h2>
           <div className="flex flex-col sm:flex-row justify-center gap-6">
             <div className="bg-foreground/5 rounded-xl p-6 backdrop-blur-sm border border-foreground/10">
-              <div className="flex items-center gap-2 ml-5">
+              <div className="flex items-center justify-center gap-2">
                 <Image src="sport.svg" alt="sport" width={20} height={20} objectFit="contain" quality={100}
                        loading="lazy"/>
                 <h3 className="text-lg font-semibold mb-3 mt-3">Спорт</h3>
@@ -142,7 +142,7 @@ export default function About() {
               <p className="text-foreground/80">Теннис, волейбол</p>
             </div>
             <div className="bg-foreground/5 rounded-xl p-6 backdrop-blur-sm border border-foreground/10">
-              <div className="flex items-center gap-2 ml-13">
+              <div className="flex items-center justify-center gap-2">
                 <Image src="music.svg" alt="music" width={20} height={20} objectFit="contain" quality={100}
                        loading="lazy"/>
                 <h3 className="text-lg font-semibold mb-3">Музыка</h3>
@@ -150,7 +150,7 @@ export default function About() {
               <p className="text-foreground/80">Люблю музыку разных жанров</p>
             </div>
             <div className="bg-foreground/5 rounded-xl p-6 backdrop-blur-sm border border-foreground/10">
-              <div className="flex items-center gap-2 ml-10">
+              <div className="flex items-center justify-center gap-2">
                 <Image src="language.svg" alt="language" width={20} height={20} objectFit="contain" quality={100}
                        loading="lazy"/>
                 <h3 className="text-lg font-semibold mb-3">Языки</h3>

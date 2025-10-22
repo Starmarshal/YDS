@@ -19,7 +19,7 @@ export default function Home() {
 
         <div className="flex flex-col sm:flex-row justify-center gap-4 mb-12">
           <div className="bg-foreground/5 rounded-lg p-4 backdrop-blur-sm border border-foreground/10">
-            <div className="flex items-center gap-2">
+            <div className="flex items-center justify-center gap-2">
               <Image src="telephone.svg" alt="telephone" width={20} height={20} objectFit="contain" quality={100}
                      loading="lazy"/>
               <p className="text-lg">+7 (906) 7895344</p>
@@ -27,7 +27,7 @@ export default function Home() {
             <p className="text-sm text-foreground/60">Telegram: @yurdima</p>
           </div>
           <div className="bg-foreground/5 rounded-lg p-4 backdrop-blur-sm border border-foreground/10">
-            <div className="flex items-center gap-2 ml-2">
+            <div className="flex items-center justify-center gap-2">
               <Image src="email.svg" alt="email" width={20} height={20} objectFit="contain" quality={100}
                      loading="lazy"/>
               <p className="text-lg">yurdima@mail.ru</p>
@@ -35,7 +35,7 @@ export default function Home() {
             <p className="text-sm text-foreground/60">предпочитаемый способ связи</p>
           </div>
           <div className="bg-foreground/5 rounded-lg p-4 backdrop-blur-sm border border-foreground/10">
-            <div className="flex items-center gap-2 ml-6">
+            <div className="flex items-center justify-center gap-2">
               <Image src="placeholder.svg" alt="placeholder" width={20} height={20} objectFit="contain" quality={100}
                      loading="lazy"/>
               <p className="text-lg">Москва</p>
