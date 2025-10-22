@@ -38,7 +38,6 @@ export default function Footer() {
                       </div>
                   </div>
 
-                  {/* Центральная колонка - Контакты */}
                   <div className="space-y-4">
                       <p className="text-gray-400 text-sm font-medium">
                           Мои контакты
@@ -50,10 +49,10 @@ export default function Footer() {
                                   Телефон для сотрудничества:
                               </p>
                               <a
-                                href="tel:+79999999999"
+                                href="tel:+79067895344"
                                 className="text-white text-sm hover:text-blue-400 transition-colors block mt-1"
                               >
-                                  +7 (999) 999-99-99
+                                  +7 (906) 789-53-44
                               </a>
                           </div>
 
@@ -62,10 +61,10 @@ export default function Footer() {
                                   Почта для сотрудничества:
                               </p>
                               <a
-                                href="mailto:d.s.yurevich@gmail.com"
+                                href="mailto:yurdima@mail.ru"
                                 className="text-white text-sm hover:text-blue-400 transition-colors block mt-1"
                               >
-                                  d.s.yurevich@gmail.com
+                                  yurdima@mail.ru
                               </a>
                           </div>
                       </div>

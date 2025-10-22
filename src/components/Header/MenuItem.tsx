@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import {IMenuItem} from '@/src/components/menu.data';
+import {IMenuItem} from '@/src/components/Header/menu.data';
 
 interface Props {
   menuItem: IMenuItem;

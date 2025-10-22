@@ -7,15 +7,11 @@ export interface IMenuItem{
 
 export const MENU = [
   {
-    href: PAGES.HOME,
-    name:'Главная'
+    href: PAGES.PRIVACY,
+    name:'Политика конфиденциальности'
   },
   {
-    href: PAGES.ABOUT,
-    name:'Обо мне'
-  },
-  {
-    href: PAGES.CONTACTS,
-    name: 'Контакты'
+    href: PAGES.TERMS,
+    name: 'Пользовательское соглашение'
   }
 ]

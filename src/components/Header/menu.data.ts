@@ -15,7 +15,11 @@ export const MENU = [
     name:'Обо мне'
   },
   {
+    href: PAGES.EXPERIENCE,
+    name: 'Опыт'
+  },
+  {
     href: PAGES.CONTACTS,
     name: 'Контакты'
-  }
+  },
 ]
