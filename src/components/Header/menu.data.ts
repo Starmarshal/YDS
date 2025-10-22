@@ -1,4 +1,4 @@
-import { PAGES } from '@/src/app/config/pages.config';
+import {PAGES} from '@/src/app/config/pages.config';
 
 export interface IMenuItem {
   href: string;

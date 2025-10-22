@@ -1,9 +1,9 @@
 'use client';
 
-import { useTheme } from '@/src/providers/ThemeProvider';
+import {useTheme} from '@/src/providers/ThemeProvider';
 
 export default function ThemeToggle() {
-  const { theme, toggleTheme, isChecked } = useTheme();
+  const {toggleTheme, isChecked} = useTheme();
 
   return (
     <label className="switch">

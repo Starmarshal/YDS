@@ -1,5 +1,5 @@
 export default function ContactForm() {
-  return(
+  return (
     <section className="py-8 bg-gradient-to-r from-blue-500/5 to-green-500/5 rounded-3xl">
       <div className="text-center px-8">
         <h2 className="text-2xl font-bold mb-4">Готов обсудить сотрудничество</h2>
@@ -22,5 +22,5 @@ export default function ContactForm() {
         </div>
       </div>
     </section>
-  )
+  );
 }

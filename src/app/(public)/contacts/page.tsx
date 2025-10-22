@@ -8,33 +8,38 @@ export const metadata: Metadata = {
 export default function Contacts() {
   const contactInfo = [
     {
-      icon: <Image src='email.svg' alt='email' width={30} height={30} objectFit='contain' quality={100} loading='lazy' />,
+      icon: <Image src="email.svg" alt="email" width={30} height={30} objectFit="contain" quality={100}
+                   loading="lazy"/>,
       title: 'Email',
       value: 'yurdima@mail.ru',
       link: 'mailto:yurdima@mail.ru',
       description: 'предпочитаемый способ связи'
     },
     {
-      icon: <Image src='telephone.svg' alt='phone' width={30} height={30} objectFit='contain' quality={100} loading='lazy' />,
+      icon: <Image src="telephone.svg" alt="phone" width={30} height={30} objectFit="contain" quality={100}
+                   loading="lazy"/>,
       title: 'Телефон',
       value: '+7 (906) 789-53-44',
       link: 'tel:+79067895344',
       description: 'Telegram: @yurdima'
     },
     {
-      icon: <Image src='placeholder.svg' alt='placeholder' width={30} height={30} objectFit='contain' quality={100} loading='lazy' />,
+      icon: <Image src="placeholder.svg" alt="placeholder" width={30} height={30} objectFit="contain" quality={100}
+                   loading="lazy"/>,
       title: 'Местоположение',
       value: 'Москва',
       description: 'Готов к командировкам'
     },
     {
-      icon: <Image src='globe.svg' alt='globe' width={30} height={30} objectFit='contain' quality={100} loading='lazy' />,
+      icon: <Image src="globe.svg" alt="globe" width={30} height={30} objectFit="contain" quality={100}
+                   loading="lazy"/>,
       title: 'Гражданство',
       value: 'Россия',
       description: 'Есть разрешение на работу: Россия'
     },
     {
-      icon: <Image src='suitcase.svg' alt='suitcase' width={30} height={30} objectFit='contain' quality={100} loading='lazy' />,
+      icon: <Image src="suitcase.svg" alt="suitcase" width={30} height={30} objectFit="contain" quality={100}
+                   loading="lazy"/>,
       title: 'Занятость',
       value: 'Полная занятость',
       description: 'Полный день, не готов к переезду'
@@ -87,10 +92,12 @@ export default function Contacts() {
         <div className="px-8">
           <h2 className="text-2xl font-bold mb-6 text-center">Профессиональные профили</h2>
           <div className="flex justify-center">
-            <div className="bg-foreground/5 rounded-xl p-6 backdrop-blur-sm border border-foreground/10 hover:bg-foreground/10 transition-all duration-300">
+            <div
+              className="bg-foreground/5 rounded-xl p-6 backdrop-blur-sm border border-foreground/10 hover:bg-foreground/10 transition-all duration-300">
               <div className="flex items-center gap-4">
                 <div className="text-2xl">
-                  <Image src='telegram.svg' alt='telegram' width={30} height={30} objectFit='contain' quality={100} loading='lazy' />
+                  <Image src="telegram.svg" alt="telegram" width={30} height={30} objectFit="contain" quality={100}
+                         loading="lazy"/>
                 </div>
                 <div>
                   <h3 className="font-semibold text-lg mb-1">Telegram</h3>
@@ -116,14 +123,16 @@ export default function Contacts() {
           <div className="grid md:grid-cols-2 gap-6">
             <div className="bg-foreground/5 rounded-xl p-6 backdrop-blur-sm border border-foreground/10">
               <div className="text-2xl text-blue-500 mb-3 flex justify-center items-center">
-                <Image src='clock.svg' alt='clock' width={40} height={40} objectFit='contain' quality={100} loading='lazy' />
+                <Image src="clock.svg" alt="clock" width={40} height={40} objectFit="contain" quality={100}
+                       loading="lazy"/>
               </div>
               <h3 className="font-semibold mb-2">График работы</h3>
               <p className="text-foreground/80">Полный день</p>
             </div>
             <div className="bg-foreground/5 rounded-xl p-6 backdrop-blur-sm border border-foreground/10">
               <div className="text-2xl text-blue-500 mb-3 flex justify-center items-center">
-                <Image src='travel.svg' alt='travel' width={40} height={40} objectFit='contain' quality={100} loading='lazy' />
+                <Image src="travel.svg" alt="travel" width={40} height={40} objectFit="contain" quality={100}
+                       loading="lazy"/>
               </div>
               <h3 className="font-semibold mb-2">Командировки</h3>
               <p className="text-foreground/80">Готов к командировкам</p>
@@ -169,14 +178,16 @@ export default function Contacts() {
           <div className="grid md:grid-cols-2 gap-6 max-w-2xl mx-auto">
             <div className="bg-foreground/5 rounded-xl p-6 backdrop-blur-sm border border-foreground/10">
               <div className="text-2xl text-green-500 mb-3 flex justify-center items-center">
-                <Image src='email.svg' alt='email' width={30} height={30} objectFit='contain' quality={100} loading='lazy' />
+                <Image src="email.svg" alt="email" width={30} height={30} objectFit="contain" quality={100}
+                       loading="lazy"/>
               </div>
               <h3 className="font-semibold mb-2">Email</h3>
               <p className="text-foreground/80">В течение 24 часов</p>
             </div>
             <div className="bg-foreground/5 rounded-xl p-6 backdrop-blur-sm border border-foreground/10">
               <div className="text-2xl text-blue-500 mb-3 flex justify-center items-center">
-                <Image src='telegram.svg' alt='telegram' width={30} height={30} objectFit='contain' quality={100} loading='lazy' />
+                <Image src="telegram.svg" alt="telegram" width={30} height={30} objectFit="contain" quality={100}
+                       loading="lazy"/>
               </div>
               <h3 className="font-semibold mb-2">Telegram</h3>
               <p className="text-foreground/80">В течение нескольких часов</p>

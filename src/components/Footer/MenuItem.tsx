@@ -6,13 +6,13 @@ interface Props {
   isActive: boolean;
 }
 
-export default function MenuItem({menuItem, isActive}:Props) {
+export default function MenuItem({menuItem, isActive}: Props) {
 
-  return(
+  return (
     <Link
       href={menuItem.href}
     >
       {menuItem.name}
     </Link>
-  )
+  );
 }

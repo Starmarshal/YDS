@@ -1,6 +1,6 @@
 'use client';
 
-import { createContext, useContext, useEffect, useState } from 'react';
+import {createContext, useContext, useEffect, useState} from 'react';
 
 type Theme = 'theme-light' | 'theme-dark';
 
@@ -12,7 +12,7 @@ type ThemeContextType = {
 
 const ThemeContext = createContext<ThemeContextType | undefined>(undefined);
 
-export function ThemeProvider({ children }: { children: React.ReactNode }) {
+export function ThemeProvider({children}: { children: React.ReactNode }) {
   const [theme, setTheme] = useState<Theme>('theme-light');
   const [isChecked, setIsChecked] = useState(true);
 
@@ -46,7 +46,7 @@ export function ThemeProvider({ children }: { children: React.ReactNode }) {
   };
 
   return (
-    <ThemeContext.Provider value={{ theme, toggleTheme, isChecked }}>
+    <ThemeContext.Provider value={{theme, toggleTheme, isChecked}}>
       {children}
     </ThemeContext.Provider>
   );

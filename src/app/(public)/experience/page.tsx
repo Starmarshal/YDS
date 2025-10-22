@@ -8,7 +8,7 @@ export const metadata: Metadata = {
 export default function Experience() {
   return (
     <div className="w-full max-w-4xl mx-auto space-y-12">
-    <section className="text-center py-8 bg-gradient-to-br from-blue-500/5 to-purple-500/5 rounded-3xl">
+      <section className="text-center py-8 bg-gradient-to-br from-blue-500/5 to-purple-500/5 rounded-3xl">
         <h1 className="text-3xl lg:text-4xl font-bold mb-4">Опыт работы</h1>
         <p className="text-lg text-foreground/80 max-w-2xl mx-auto">
           25+ лет профессионального опыта в финансовом управлении,

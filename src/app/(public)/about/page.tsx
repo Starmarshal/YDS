@@ -25,7 +25,8 @@ export default function About() {
             <div className="space-y-4">
               <div className="bg-foreground/5 rounded-xl p-6 backdrop-blur-sm border border-foreground/10">
                 <div className="flex items-center gap-2">
-                  <Image src="goal.svg" alt="goal" width={20} height={20} objectFit='contain' quality={100} loading='lazy' />
+                  <Image src="goal.svg" alt="goal" width={20} height={20} objectFit="contain" quality={100}
+                         loading="lazy"/>
                   <h3 className="text-lg font-semibold mb-3 mt-2">Ценности</h3>
                 </div>
                 <ul className="space-y-2 text-foreground/80 text-sm">
@@ -40,7 +41,8 @@ export default function About() {
             <div className="space-y-4">
               <div className="bg-foreground/5 rounded-xl p-6 backdrop-blur-sm border border-foreground/10">
                 <div className="flex items-center gap-2">
-                  <Image src="strength.svg" alt="strength" width={20} height={20} objectFit='contain' quality={100} loading='lazy' />
+                  <Image src="strength.svg" alt="strength" width={20} height={20} objectFit="contain" quality={100}
+                         loading="lazy"/>
                   <h3 className="text-lg font-semibold mb-3 mt-1">Сильные стороны</h3>
                 </div>
                 <ul className="space-y-2 text-foreground/80 text-sm">
@@ -95,7 +97,8 @@ export default function About() {
           <div className="grid md:grid-cols-2 gap-8">
             <div className="space-y-4">
               <div className="flex items-center gap-2">
-                <Image src="finance.svg" alt="finance" width={20} height={20} objectFit='contain' quality={100} loading='lazy' />
+                <Image src="finance.svg" alt="finance" width={20} height={20} objectFit="contain" quality={100}
+                       loading="lazy"/>
                 <h3 className="text-lg font-semibold">Финансовый менеджмент</h3>
               </div>
               <div className="flex flex-wrap gap-2">
@@ -109,7 +112,8 @@ export default function About() {
             </div>
             <div className="space-y-4">
               <div className="flex items-center gap-2">
-                <Image src="tool.svg" alt="tool" width={20} height={20} objectFit='contain' quality={100} loading='lazy' />
+                <Image src="tool.svg" alt="tool" width={20} height={20} objectFit="contain" quality={100}
+                       loading="lazy"/>
                 <h3 className="text-lg font-semibold">Технические навыки</h3>
               </div>
               <div className="flex flex-wrap gap-2">
@@ -131,21 +135,24 @@ export default function About() {
           <div className="flex flex-col sm:flex-row justify-center gap-6">
             <div className="bg-foreground/5 rounded-xl p-6 backdrop-blur-sm border border-foreground/10">
               <div className="flex items-center gap-2 ml-5">
-                <Image src="sport.svg" alt="sport" width={20} height={20} objectFit='contain' quality={100} loading='lazy' />
+                <Image src="sport.svg" alt="sport" width={20} height={20} objectFit="contain" quality={100}
+                       loading="lazy"/>
                 <h3 className="text-lg font-semibold mb-3 mt-3">Спорт</h3>
               </div>
               <p className="text-foreground/80">Теннис, волейбол</p>
             </div>
             <div className="bg-foreground/5 rounded-xl p-6 backdrop-blur-sm border border-foreground/10">
               <div className="flex items-center gap-2 ml-13">
-                <Image src="music.svg" alt="music" width={20} height={20} objectFit='contain' quality={100} loading='lazy' />
+                <Image src="music.svg" alt="music" width={20} height={20} objectFit="contain" quality={100}
+                       loading="lazy"/>
                 <h3 className="text-lg font-semibold mb-3">Музыка</h3>
               </div>
               <p className="text-foreground/80">Люблю музыку разных жанров</p>
             </div>
             <div className="bg-foreground/5 rounded-xl p-6 backdrop-blur-sm border border-foreground/10">
               <div className="flex items-center gap-2 ml-10">
-                <Image src="language.svg" alt="language" width={20} height={20} objectFit='contain' quality={100} loading='lazy' />
+                <Image src="language.svg" alt="language" width={20} height={20} objectFit="contain" quality={100}
+                       loading="lazy"/>
                 <h3 className="text-lg font-semibold mb-3">Языки</h3>
               </div>
               <p className="text-foreground/80">Изучаю арабский язык</p>

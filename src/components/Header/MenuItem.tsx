@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { IMenuItem } from '@/src/components/Header/menu.data';
+import {IMenuItem} from '@/src/components/Header/menu.data';
 
 interface Props {
   menuItem: IMenuItem;
@@ -8,8 +8,7 @@ interface Props {
   onClose?: () => void;
 }
 
-export default function MenuItem({ menuItem, isActive, mobile = false, onClose }: Props) {
-  // Защита от undefined
+export default function MenuItem({menuItem, isActive, mobile = false, onClose}: Props) {
   if (!menuItem || !menuItem.href || !menuItem.name) {
     console.warn('Invalid menu item:', menuItem);
     return null;
@@ -17,7 +16,6 @@ export default function MenuItem({ menuItem, isActive, mobile = false, onClose }
 
   const handleClick = () => {
     if (mobile && onClose) {
-      // Небольшая задержка для плавного закрытия
       setTimeout(onClose, 100);
     }
   };

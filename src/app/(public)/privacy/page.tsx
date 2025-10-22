@@ -1,4 +1,4 @@
-import { Metadata } from 'next';
+import {Metadata} from 'next';
 import Privacy from '@/src/app/(public)/privacy/Privacy';
 
 export const metadata: Metadata = {

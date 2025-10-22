@@ -1,4 +1,4 @@
-import { Metadata } from 'next';
+import {Metadata} from 'next';
 import Terms from '@/src/app/(public)/terms/Terms';
 
 export const metadata: Metadata = {

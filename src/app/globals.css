@@ -1,133 +1,132 @@
 @import "tailwindcss";
 
 :root {
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+    --font-sans: var(--font-geist-sans);
+    --font-mono: var(--font-geist-mono);
 }
 
 .theme-light {
-  --background: #ffffff;
-  --foreground: #0f0f0f;
-  --color-primary: #0060df;
-  --color-secondary: #fbfbfe;
-  --color-accent: #fd6f53;
-  --font-color: #000000;
+    --background: #ffffff;
+    --foreground: #0f0f0f;
+    --color-primary: #0060df;
+    --color-secondary: #fbfbfe;
+    --color-accent: #fd6f53;
+    --font-color: #000000;
 }
 
 .theme-dark {
-  --background: #000000;
-  --foreground: #e6e6e6;
-  --color-primary: #17ed90;
-  --color-secondary: #2a2c2d;
-  --color-accent: #12cdea;
-  --font-color: #ffffff;
+    --background: #000000;
+    --foreground: #e6e6e6;
+    --color-primary: #17ed90;
+    --color-secondary: #2a2c2d;
+    --color-accent: #12cdea;
+    --font-color: #ffffff;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: var(--font-sans), system-ui, sans-serif;
-  font-size: 16px;
-  line-height: 1.6;
-  transition: background-color 0.3s ease, color 0.3s ease;
+    background: var(--background);
+    color: var(--foreground);
+    font-family: var(--font-sans), system-ui, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 html {
-  scroll-behavior: smooth;
+    scroll-behavior: smooth;
 }
 
 /* Мобильные стили */
 @media (max-width: 768px) {
-  body {
-    font-size: 14px;
-  }
+    body {
+        font-size: 14px;
+    }
 
-  .switch {
-    width: 50px;
-    height: 28px;
-  }
+    .switch {
+        width: 50px;
+        height: 28px;
+    }
 
-  .slider:before {
-    height: 20px;
-    width: 20px;
-    left: 4px;
-    bottom: 4px;
-    background-size: 12px;
-  }
+    .slider:before {
+        height: 20px;
+        width: 20px;
+        left: 4px;
+        bottom: 4px;
+        background-size: 12px;
+    }
 
-  input:checked + .slider:before {
-    transform: translateX(22px);
-  }
+    input:checked + .slider:before {
+        transform: translateX(22px);
+    }
 }
 
 @media (max-width: 480px) {
-  body {
-    font-size: 13px;
-  }
+    body {
+        font-size: 13px;
+    }
 }
 
 .switch {
-  position: relative;
-  display: inline-block;
-  width: 60px;
-  height: 34px;
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
 }
 
 .switch input {
-  opacity: 0;
-  width: 0;
-  height: 0;
+    opacity: 0;
+    width: 0;
+    height: 0;
 }
 
 .slider {
-  position: absolute;
-  cursor: pointer;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: #ccc;
-  transition: 0.4s;
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: 0.4s;
 }
 
 .slider:before {
-  position: absolute;
-  content: "";
-  height: 26px;
-  width: 26px;
-  left: 4px;
-  bottom: 4px;
-  background: white url('https://i.ibb.co/FxzBYR9/night.png') no-repeat center;
-  background-size: 16px;
-  transition: 0.4s;
-  box-shadow: 0 0px 15px #2020203d;
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background: white url('https://i.ibb.co/FxzBYR9/night.png') no-repeat center;
+    background-size: 16px;
+    transition: 0.4s;
+    box-shadow: 0 0px 15px #2020203d;
 }
 
 input:checked + .slider {
-  background-color: #2196f3;
+    background-color: #2196f3;
 }
 
 input:focus + .slider {
-  box-shadow: 0 0 1px #2196f3;
+    box-shadow: 0 0 1px #2196f3;
 }
 
 input:checked + .slider:before {
-  transform: translateX(26px);
-  background: white url('https://i.ibb.co/7JfqXxB/sunny.png') no-repeat center;
-  background-size: 16px;
+    transform: translateX(26px);
+    background: white url('https://i.ibb.co/7JfqXxB/sunny.png') no-repeat center;
+    background-size: 16px;
 }
 
 .slider.round {
-  border-radius: 34px;
+    border-radius: 34px;
 }
 
 .slider.round:before {
-  border-radius: 50%;
+    border-radius: 50%;
 }
 
-/* Предотвращение zoom при фокусе на мобильных устройствах */
 @media (max-width: 768px) {
-  input, textarea, select {
-    font-size: 16px;
-  }
+    input, textarea, select {
+        font-size: 16px;
+    }
 }
