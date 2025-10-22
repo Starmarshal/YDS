@@ -1,4 +1,3 @@
-// app/contacts/page.tsx
 import {Metadata} from 'next';
 import Image from 'next/image';
 
@@ -9,47 +8,39 @@ export const metadata: Metadata = {
 export default function Contacts() {
   const contactInfo = [
     {
-      icon: '📧',
+      icon: <Image src='email.svg' alt='email' width={30} height={30} objectFit='contain' quality={100} loading='lazy' />,
       title: 'Email',
       value: 'yurdima@mail.ru',
       link: 'mailto:yurdima@mail.ru',
       description: 'предпочитаемый способ связи'
     },
     {
-      icon: '📞',
+      icon: <Image src='telephone.svg' alt='phone' width={30} height={30} objectFit='contain' quality={100} loading='lazy' />,
       title: 'Телефон',
-      value: '+7 (906) 7895344',
+      value: '+7 (906) 789-53-44',
       link: 'tel:+79067895344',
       description: 'Telegram: @yurdima'
     },
     {
-      icon: '📍',
+      icon: <Image src='placeholder.svg' alt='placeholder' width={30} height={30} objectFit='contain' quality={100} loading='lazy' />,
       title: 'Местоположение',
       value: 'Москва',
       description: 'Готов к командировкам'
     },
     {
-      icon: '🌐',
+      icon: <Image src='globe.svg' alt='globe' width={30} height={30} objectFit='contain' quality={100} loading='lazy' />,
       title: 'Гражданство',
       value: 'Россия',
       description: 'Есть разрешение на работу: Россия'
     },
     {
-      icon: '💼',
+      icon: <Image src='suitcase.svg' alt='suitcase' width={30} height={30} objectFit='contain' quality={100} loading='lazy' />,
       title: 'Занятость',
       value: 'Полная занятость',
       description: 'Полный день, не готов к переезду'
     }
   ];
 
-  const professionalProfiles = [
-    {
-      name: 'Telegram',
-      username: '@yurdima',
-      link: 'https://t.me/yurdima',
-      icon: '📱'
-    }
-  ];
 
   return (
     <div className="w-full max-w-4xl mx-auto space-y-12">
@@ -92,7 +83,6 @@ export default function Contacts() {
         </div>
       </section>
 
-      {/* Professional Profiles */}
       <section className="py-8 bg-gradient-to-l from-yellow-500/5 to-green-500/5 rounded-3xl">
         <div className="px-8">
           <h2 className="text-2xl font-bold mb-6 text-center">Профессиональные профили</h2>
@@ -125,12 +115,16 @@ export default function Contacts() {
           <h2 className="text-2xl font-bold mb-6">Доступность</h2>
           <div className="grid md:grid-cols-2 gap-6">
             <div className="bg-foreground/5 rounded-xl p-6 backdrop-blur-sm border border-foreground/10">
-              <div className="text-2xl mb-3">🕒</div>
+              <div className="text-2xl text-blue-500 mb-3 flex justify-center items-center">
+                <Image src='clock.svg' alt='clock' width={40} height={40} objectFit='contain' quality={100} loading='lazy' />
+              </div>
               <h3 className="font-semibold mb-2">График работы</h3>
               <p className="text-foreground/80">Полный день</p>
             </div>
             <div className="bg-foreground/5 rounded-xl p-6 backdrop-blur-sm border border-foreground/10">
-              <div className="text-2xl mb-3">✈️</div>
+              <div className="text-2xl text-blue-500 mb-3 flex justify-center items-center">
+                <Image src='travel.svg' alt='travel' width={40} height={40} objectFit='contain' quality={100} loading='lazy' />
+              </div>
               <h3 className="font-semibold mb-2">Командировки</h3>
               <p className="text-foreground/80">Готов к командировкам</p>
             </div>

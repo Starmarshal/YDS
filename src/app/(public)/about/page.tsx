@@ -1,5 +1,6 @@
 import {Metadata} from 'next';
 import ContactForm from '@/src/components/Contact form/ContactForm';
+import Image from 'next/image';
 
 export const metadata: Metadata = {
   title: 'Обо мне - Юревич Дмитрий'
@@ -8,7 +9,7 @@ export const metadata: Metadata = {
 export default function About() {
   return (
     <div className="w-full max-w-6xl mx-auto space-y-12">
-    <section className="text-center py-8 bg-gradient-to-br from-blue-500/5 to-purple-500/5 rounded-3xl">
+      <section className="text-center py-8 bg-gradient-to-br from-blue-500/5 to-purple-500/5 rounded-3xl">
         <h1 className="text-3xl lg:text-4xl font-bold mb-6">Обо мне</h1>
         <p className="text-lg text-foreground/80 max-w-2xl mx-auto leading-relaxed">
           Финансовый директор с 25-летним опытом работы в международных компаниях
@@ -23,7 +24,10 @@ export default function About() {
           <div className="grid md:grid-cols-2 gap-8">
             <div className="space-y-4">
               <div className="bg-foreground/5 rounded-xl p-6 backdrop-blur-sm border border-foreground/10">
-                <h3 className="text-lg font-semibold mb-3">🎯 Ценности</h3>
+                <div className="flex items-center gap-2">
+                  <Image src="goal.svg" alt="goal" width={20} height={20} objectFit='contain' quality={100} loading='lazy' />
+                  <h3 className="text-lg font-semibold mb-3 mt-2">Ценности</h3>
+                </div>
                 <ul className="space-y-2 text-foreground/80 text-sm">
                   <li>• Прозрачность и честность в отчетности</li>
                   <li>• Стратегическое мышление и долгосрочное планирование</li>
@@ -35,7 +39,10 @@ export default function About() {
             </div>
             <div className="space-y-4">
               <div className="bg-foreground/5 rounded-xl p-6 backdrop-blur-sm border border-foreground/10">
-                <h3 className="text-lg font-semibold mb-3">💪 Сильные стороны</h3>
+                <div className="flex items-center gap-2">
+                  <Image src="strength.svg" alt="strength" width={20} height={20} objectFit='contain' quality={100} loading='lazy' />
+                  <h3 className="text-lg font-semibold mb-3 mt-1">Сильные стороны</h3>
+                </div>
                 <ul className="space-y-2 text-foreground/80 text-sm">
                   <li>• Лидерство и управление командами 7+ человек</li>
                   <li>• Глубокая экспертиза в МСФО и РСБУ</li>
@@ -75,7 +82,8 @@ export default function About() {
             </div>
             <div className="bg-foreground/5 rounded-xl p-6 text-center backdrop-blur-sm border border-foreground-10">
               <div className="text-2xl font-bold text-indigo-500 mb-2">7+</div>
-              <p className="text-sm text-foreground/80">Лет на позиции Финансового директора в международном холдинге</p>
+              <p className="text-sm text-foreground/80">Лет на позиции Финансового директора в международном
+                холдинге</p>
             </div>
           </div>
         </div>
@@ -86,7 +94,10 @@ export default function About() {
           <h2 className="text-2xl font-bold mb-6 text-center">Профессиональные навыки</h2>
           <div className="grid md:grid-cols-2 gap-8">
             <div className="space-y-4">
-              <h3 className="text-lg font-semibold">📊 Финансовый менеджмент</h3>
+              <div className="flex items-center gap-2">
+                <Image src="finance.svg" alt="finance" width={20} height={20} objectFit='contain' quality={100} loading='lazy' />
+                <h3 className="text-lg font-semibold">Финансовый менеджмент</h3>
+              </div>
               <div className="flex flex-wrap gap-2">
                 <span className="bg-blue-500/20 text-blue-400 px-3 py-1 rounded-full text-sm">МСФО</span>
                 <span className="bg-blue-500/20 text-blue-400 px-3 py-1 rounded-full text-sm">РСБУ</span>
@@ -97,7 +108,10 @@ export default function About() {
               </div>
             </div>
             <div className="space-y-4">
-              <h3 className="text-lg font-semibold">🛠 Технические навыки</h3>
+              <div className="flex items-center gap-2">
+                <Image src="tool.svg" alt="tool" width={20} height={20} objectFit='contain' quality={100} loading='lazy' />
+                <h3 className="text-lg font-semibold">Технические навыки</h3>
+              </div>
               <div className="flex flex-wrap gap-2">
                 <span className="bg-green-500/20 text-green-400 px-3 py-1 rounded-full text-sm">1С УПП</span>
                 <span className="bg-green-500/20 text-green-400 px-3 py-1 rounded-full text-sm">SAP/BSC</span>
@@ -116,15 +130,24 @@ export default function About() {
           <h2 className="text-2xl font-bold mb-6">Личные интересы</h2>
           <div className="flex flex-col sm:flex-row justify-center gap-6">
             <div className="bg-foreground/5 rounded-xl p-6 backdrop-blur-sm border border-foreground/10">
-              <h3 className="text-lg font-semibold mb-3">🎾 Спорт</h3>
+              <div className="flex items-center gap-2 ml-5">
+                <Image src="sport.svg" alt="sport" width={20} height={20} objectFit='contain' quality={100} loading='lazy' />
+                <h3 className="text-lg font-semibold mb-3 mt-3">Спорт</h3>
+              </div>
               <p className="text-foreground/80">Теннис, волейбол</p>
             </div>
             <div className="bg-foreground/5 rounded-xl p-6 backdrop-blur-sm border border-foreground/10">
-              <h3 className="text-lg font-semibold mb-3">🎵 Музыка</h3>
+              <div className="flex items-center gap-2 ml-13">
+                <Image src="music.svg" alt="music" width={20} height={20} objectFit='contain' quality={100} loading='lazy' />
+                <h3 className="text-lg font-semibold mb-3">Музыка</h3>
+              </div>
               <p className="text-foreground/80">Люблю музыку разных жанров</p>
             </div>
             <div className="bg-foreground/5 rounded-xl p-6 backdrop-blur-sm border border-foreground/10">
-              <h3 className="text-lg font-semibold mb-3">🌍 Языки</h3>
+              <div className="flex items-center gap-2 ml-10">
+                <Image src="language.svg" alt="language" width={20} height={20} objectFit='contain' quality={100} loading='lazy' />
+                <h3 className="text-lg font-semibold mb-3">Языки</h3>
+              </div>
               <p className="text-foreground/80">Изучаю арабский язык</p>
             </div>
           </div>

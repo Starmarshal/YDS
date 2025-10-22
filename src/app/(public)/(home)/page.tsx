@@ -1,5 +1,6 @@
 import ContactForm from '@/src/components/Contact form/ContactForm';
 import {Metadata} from 'next';
+import Image from 'next/image';
 
 export const metadata: Metadata = {
   title: 'Главная'
@@ -18,15 +19,24 @@ export default function Home() {
 
         <div className="flex flex-col sm:flex-row justify-center gap-4 mb-12">
           <div className="bg-foreground/5 rounded-lg p-4 backdrop-blur-sm border border-foreground/10">
-            <p className="text-lg">📞 +7 (906) 7895344</p>
+            <div className='flex items-center gap-2'>
+              <Image src='telephone.svg' alt='telephone' width={20} height={20} objectFit='contain' quality={100} loading='lazy' />
+              <p className="text-lg">+7 (906) 7895344</p>
+            </div>
             <p className="text-sm text-foreground/60">Telegram: @yurdima</p>
           </div>
           <div className="bg-foreground/5 rounded-lg p-4 backdrop-blur-sm border border-foreground/10">
-            <p className="text-lg">📧 yurdima@mail.ru</p>
+            <div className='flex items-center gap-2 ml-2'>
+              <Image src='email.svg' alt='email' width={20} height={20} objectFit='contain' quality={100} loading='lazy' />
+              <p className="text-lg">yurdima@mail.ru</p>
+            </div>
             <p className="text-sm text-foreground/60">предпочитаемый способ связи</p>
           </div>
           <div className="bg-foreground/5 rounded-lg p-4 backdrop-blur-sm border border-foreground/10">
-            <p className="text-lg">📍 Москва</p>
+            <div className='flex items-center gap-2 ml-6'>
+              <Image src='placeholder.svg' alt='placeholder' width={20} height={20} objectFit='contain' quality={100} loading='lazy' />
+              <p className="text-lg">Москва</p>
+            </div>
             <p className="text-sm text-foreground/60">Готов к командировкам</p>
           </div>
         </div>
@@ -56,7 +66,10 @@ export default function Home() {
 
         <div className="grid md:grid-cols-2 gap-8 px-6">
           <div className="bg-foreground/5 rounded-xl p-6 backdrop-blur-sm border border-foreground/10 hover:bg-foreground/10 transition-all duration-300">
-            <h4 className="text-lg font-semibold mb-4">💼 Ключевые компетенции</h4>
+            <div className='flex items-center gap-2'>
+              <Image src='suitcase.svg' alt='suitcase' width={30} height={30} objectFit='contain' quality={100} loading='lazy' />
+              <h4 className="text-lg font-semibold mb-4 mt-4">Ключевые компетенции</h4>
+            </div>
             <ul className="space-y-2 text-foreground/80">
               <li>• Финансовое руководство и стратегия</li>
               <li>• Управление инвестиционными фондами</li>
@@ -68,15 +81,20 @@ export default function Home() {
           </div>
 
           <div className="bg-foreground/5 rounded-xl p-6 backdrop-blur-sm border border-foreground/10 hover:bg-foreground/10 transition-all duration-300">
-            <h4 className="text-lg font-semibold mb-4">🎯 Специализации</h4>
+            <div className='flex items-center gap-2'>
+              <Image src='goal.svg' alt='goal' width={30} height={30} objectFit='contain' quality={100} loading='lazy' />
+              <h4 className="text-lg font-semibold mb-4 mt-4">Специализации</h4>
+            </div>
             <div className="flex flex-wrap gap-2">
               <span className="bg-blue-500/20 text-blue-400 px-3 py-1 rounded-full text-sm border border-blue-500/30">Казначей</span>
               <span className="bg-green-500/20 text-green-400 px-3 py-1 rounded-full text-sm border border-green-500/30">Финансовый директор (CFO)</span>
               <span className="bg-purple-500/20 text-purple-400 px-3 py-1 rounded-full text-sm border border-purple-500/30">Комплаенс-менеджер</span>
               <span className="bg-yellow-500/20 text-yellow-400 px-3 py-1 rounded-full text-sm border border-yellow-500/30">Финансовый контролер</span>
             </div>
-
-            <h4 className="text-lg font-semibold mt-6 mb-4">🌍 Языки</h4>
+            <div className='flex items-center gap-2'>
+              <Image src='language.svg' alt='language' width={30} height={30} objectFit='contain' quality={100} loading='lazy' />
+              <h4 className="text-lg font-semibold mt-6 mb-4">Языки</h4>
+            </div>
             <div className="flex flex-wrap gap-2">
               <span className="bg-foreground/10 text-foreground px-3 py-1 rounded-full text-sm border border-foreground/20">Русский — Родной</span>
               <span className="bg-foreground/10 text-foreground px-3 py-1 rounded-full text-sm border border-foreground/20">Английский — C1 — Продвинутый</span>
@@ -108,7 +126,10 @@ export default function Home() {
 
         <div className="grid md:grid-cols-2 gap-6 px-6">
           <div className="bg-foreground/5 rounded-xl p-6 backdrop-blur-sm border border-foreground/10">
-            <h4 className="text-lg font-semibold mb-4">🎓 Образование</h4>
+            <div className='flex items-center gap-2'>
+              <Image src='education.svg' alt='education' width={30} height={30} objectFit='contain' quality={100} loading='lazy' />
+              <h4 className="text-lg font-semibold mb-4 mt-4">Образование</h4>
+            </div>
             <div className="space-y-3">
               <div>
                 <p className="font-semibold">МАТИ - Russian State Technological University</p>
@@ -118,7 +139,10 @@ export default function Home() {
           </div>
 
           <div className="bg-foreground/5 rounded-xl p-6 backdrop-blur-sm border border-foreground/10">
-            <h4 className="text-lg font-semibold mb-4">📜 Сертификаты</h4>
+            <div className='flex items-center gap-2'>
+              <Image src='sertificate.svg' alt='sertificate' width={30} height={30} objectFit='contain' quality={100} loading='lazy' />
+              <h4 className="text-lg font-semibold mb-4 mt-4">Сертификаты</h4>
+            </div>
             <div className="space-y-2 text-sm">
               <p>• Профессиональный Финансовый Директор (2025)</p>
               <p>• Anti Money Laundering Specialist (2024)</p>
